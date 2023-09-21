@@ -57,9 +57,9 @@
                         <a class="nav-link " style="color:white" href="index.php">Начална страница</a>
                     </li>
                     
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="form_product.php" style="color:white">+ Добави продукт</a>
-                    </li>
+                    </li> -->
                     
 
                 </ul>
@@ -68,9 +68,9 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Laravel Ajax CRUD Tutorial Example - ItSolutionStuff.com</h1>
-        <a class="btn btn-success" href="javascript:void(0)" id="createNewProduct"> Create New Product</a>
+    <div class="container mt-5">
+        
+        <a class="btn btn-success" href="javascript:void(0)" id="createNewProduct">Create new product</a>
         <table class="table table-bordered data-table">
             <thead>
                 <tr>

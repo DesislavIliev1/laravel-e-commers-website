@@ -1,14 +1,14 @@
 @extends('leyout')
   
 @section('content')
-<table id="cart" class="table table-hover table-condensed">
+<table id="cart" class="table table-hover table-condensed ">
     <thead>
         <tr>
             <th style="width:50%">Име</th>
             <th style="width:10%">Цена</th>
             <th style="width:8%">Бройки</th>
             <th style="width:22%" class="text-center">Обща сума</th>
-            <th style="width:10%"></th>
+            <th style="width:10%">Изтрий</th>
         </tr>
     </thead>
     <tbody>

@@ -288,6 +288,57 @@ $(document).ready(function () {
         })
     }
 
+//     let carousel = document.getElementById("carousel");
+// let carouselBackBtn = document.getElementById("carouselBack");
+// let carouselForwardBtn = document.getElementById("carouselForward");
+// let carouselPage = 0;
+ 
+// function updateCarouselPage() {
+//   carousel.style.transform = `translateX(-${carouselPage * 10}%)`;
+// if(carouselPage==0){
+//     carouselBackBtn.style.opacity=0;
+//     carouselForwardBtn.style.opacity=1;
+ 
+ 
+// }else{
+//     carouselForwardBtn.style.opacity=0;
+//     carouselBackBtn.style.opacity=1;
+// }
+// }
+ 
+// carouselBackBtn.addEventListener("click", () => {
+//   carouselPage = Math.max(carouselPage - 1, 0);
+//   updateCarouselPage();
+ 
+// });
+ 
+// carouselForwardBtn.addEventListener("click", () => {
+//   //Max pages=1
+//   carouselPage = Math.min(carouselPage + 1, 1);
+//   updateCarouselPage();
+// });
 
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
     
 });
