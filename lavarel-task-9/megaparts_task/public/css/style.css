@@ -151,9 +151,13 @@ body {
 }
 .navbar .rectangle .frame-77 {
   max-width: 1200px;
-  min-height: 32px;
+  /* min-height: 32px; */
   gap: 20px;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.frame-86, .frame-87, .frame-2-3{
+  white-space: nowrap;
 }
 .navbar .rectangle .frame-77 .text {
   color: #FFF;
@@ -164,10 +168,21 @@ body {
   line-height: normal;
 }
 .navbar .rectangle .frame-77 .frame-2-2 {
-  max-width: 110%;
-  height: 32px;
+  overflow-x: scroll;
+  display:flex;
+  max-width: 100%;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  /* max-width: 110%; */
+  
+  /* height: 32px; */
   gap: 8px;
   flex-shrink: 0;
+
+}
+
+.frame-2-2::-webkit-scrollbar{
+  display: none;
 }
 .navbar .rectangle .frame-77 .frame-2-2 .frame-1 {
   padding: 9px 15px;
@@ -226,16 +241,41 @@ body {
   width: 396px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 16%, rgb(32, 45, 57) 40%);
 }
-.navbar .rectangle .btn {
+.btn-1 {
   z-index: 2;
   top: 50%;
-  right: 5.6%;
+  right: 4.6%;
   padding: 0;
   margin: 0;
   transform: translate(-50%, -50%);
-  background: #202D39;
+  cursor:pointer;
+  background: linear-gradient();
+  
+  border: none;
+  display:none;
+}
+.btn-1:active{
   border: none;
 }
+.but-2:active{
+  border:none;
+}
+.but-2{
+ left: 4.0%;
+  z-index: 100;
+  transform: rotate(-180deg);
+  border: none;
+  cursor:pointer;
+  /* background: linear-gradient(to right, #000 50% ,transparent); */
+  display:none;
+  
+}
+
+.but-2.active, .btn-1.active{
+  display: flex;
+}
+
+
 .navbar .rectangle .svg-pointer {
   bottom: -50%;
   left: 0.95%;

@@ -340,5 +340,42 @@ var TrandingSlider = new Swiper('.tranding-slider', {
       prevEl: '.swiper-button-prev',
     }
   });
+
+  const rightArrow = document.querySelector(".right-a");
+  const leftArrow = document.querySelector(".left-a");
+  const tabList = document.querySelector(".frame-2-2");
+  const leftArrowCont = document.querySelector(".but-2");
+  const rightArrowCont = document.querySelector(".btn-1");
+
+  const manageIcons = () => {
+    if(tabList.scrollLeft >= 20){
+        leftArrowCont.classList.add("active");
+    }else{
+        leftArrowCont.classList.remove("active");
+    }
+
+    let maxScrollValue = tabList.scrollWidth - tabList.clientWidth - 20;
+  if(tabList.scrollLeft >= maxScrollValue){
+    rightArrowCont.classList.remove("active");
+  }else{
+    rightArrowCont.classList.add("active");
+  }
+  }
+
+  
+
+  rightArrow.addEventListener("click", ()=>{
+    tabList.scrollLeft +=200;
+    manageIcons();
+  })
+
+  tabList.addEventListener("scroll", manageIcons);
+
+  leftArrow.addEventListener("click", ()=>{
+    tabList.scrollLeft -=200;
+    manageIcons();
+  })
+
+
     
 });
