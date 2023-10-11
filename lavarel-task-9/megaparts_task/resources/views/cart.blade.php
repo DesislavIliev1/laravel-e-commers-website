@@ -1,4 +1,6 @@
+
 @extends('leyout')
+
   
 @section('content')
 <table id="cart" class="table table-hover table-condensed ">
